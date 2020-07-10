@@ -23,6 +23,7 @@ default: &default
   host: livredoc_db
   # E colocamos o usuário default do postgreSQL
   user: postgres
+  password: <%= ENV.fetch('POSTGRES_PASSWORD') { 'postgres' } %>
 
 development:
   <<: *default
