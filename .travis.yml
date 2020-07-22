@@ -1,0 +1,15 @@
+os: linux
+dist: xenial
+language: ruby
+cache: bundler
+rvm:
+  - "2.4.0"
+services:
+  - postgresql
+bundler_args: --without development debug
+before_script:
+  - cp config/database.travis.yml config/database.yml
+  - bin/rake db:test:prepare
+env:
+  - RAILS_ENV=test
+script: bin/rspec

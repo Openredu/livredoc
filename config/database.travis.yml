@@ -1,0 +1,6 @@
+test:
+  adapter: postgresql
+  database: livredoc_test
+  username: travis
+  encoding: utf8
+  host: 127.0.0.1
