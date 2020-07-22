@@ -15,6 +15,7 @@ Feita com o foco de ser usada pelo [Openredu](https://github.com/Openredu/Openre
   - Alterar no arquivo .env a linha RAILS_ENV=development para RAILS_ENV=production
   - Executar no terminal:
   - docker-compose build
+  - POSTGRES_PASSOWORD=postgres docker-compose up -d livredoc_db
   - docker-compose run livredoc rake db:setup
   - docker-compose up -d
 
