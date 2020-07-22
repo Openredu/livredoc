@@ -1,7 +1,4 @@
-language: ruby
 services:
   - docker
-env:
-  - RAILS_ENV=test
 script:
   - docker-compose run livredoc bin/rspec
