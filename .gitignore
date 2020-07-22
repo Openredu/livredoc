@@ -25,3 +25,4 @@
 /spec/support/uploads/*
 
 dump.rdb
+config/database.yml

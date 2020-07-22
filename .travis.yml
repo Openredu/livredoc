@@ -1,0 +1,7 @@
+language: minimal
+services:
+  - docker
+before_install:
+  - cp config/database.example.yml config/database.yml
+script:
+  - docker-compose run livredoc bin/rspec
